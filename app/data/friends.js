@@ -22,8 +22,8 @@ var friends = [
        ]
     },
     {
-       "name":"Jamie Delong",
-       "photo":"https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/26231278_10215474069224699_978920154395224591_n.jpg?_nc_cat=103&_nc_ht=scontent-mia3-2.xx&oh=a6c4a33af5680240fa7bbb05e39cced8&oe=5CF26F8D",
+       "name":"Cyndra Alderman",
+       "photo":"https://media.licdn.com/dms/image/C4E03AQEBxTNagIQBCA/profile-displayphoto-shrink_800_800/0?e=1556755200&v=beta&t=YXUQr6XW-J25IignRf8DBxqz7Ge9aqv2hAc3-WpBjPY",
        "scores":[
           "4",
           "2",
@@ -54,8 +54,8 @@ var friends = [
        ]
     },
     {
-       "name":"Brandon Kalber",
-       "photo":"https://media.licdn.com/dms/image/C4D03AQFEi-BUKhTUDA/profile-displayphoto-shrink_800_800/0?e=1556755200&v=beta&t=MXZt1K9KqM5kGeeW68BkV0P4fITrD8aQRamF-8_ugGc",
+       "name":"Ed Corr",
+       "photo":"https://media.licdn.com/dms/image/C5603AQH48x2bfVOk0g/profile-displayphoto-shrink_800_800/0?e=1556755200&v=beta&t=C6lmj4IvtHAHIY6FG7de_GlkK4DO5_AbsSZ9YC-C3jk",
        "scores":[
           "3",
           "3",
@@ -102,8 +102,8 @@ var friends = [
         ]
      },
      {
-         "name":"Mary Corr",
-         "photo":"https://www.facebook.com/photo.php?fbid=10213535718017953&set=t.1552086514&type=3&size=720%2C960",
+         "name":"Noel Alfonso",
+         "photo":"https://media.licdn.com/dms/image/C4E03AQHJFZ50dxPMTg/profile-displayphoto-shrink_800_800/0?e=1556755200&v=beta&t=JUZfCTH3KlNIQJskEs8yeM_MuCK61XG1k9nayf6YRWg",
          "scores":[
             "2",
             "3",

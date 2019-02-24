@@ -11,25 +11,38 @@ Node and Express Servers application.
 * [How to use app](#how-to-use)
 
 ## <a name="about-this-project"></a> About this project
-This project is an compatiblity-based "FriendFinder" application. Basically a dating or friend app. This full-stack site takes in results from users surveys, then compare their answers with those from other users. The app then displays the name and picture of the user with the best overall match. 
+This project is an compatiblity-based "FriendFinder" application. Basically a friend compatibity app. This full-stack site takes in results from users surveys, then compare their answers with those from other users. The app then displays the name and picture of the user with the best overall match. 
 
 ## <a name="project-requirements"></a> Project requirements
 
-<li>Creat a MySQL Database called 'bamazon'</li>
-<li>Create a Table inside the of the database called 'products'</li>
-<li>The products table includes the following columns</li>
-    <ol>item_id</ol>
-    <ol>product_name</ol>
-    <ol>department_name</ol>
-    <ol>price (cost per customer)</ol>
-    <ol>stock_quantity</ol>
-<li>Populate the database with 10 different products</li> 
-<li>Create Node application called 'bamazonCustomer.js'</li>
-<li>Display all items avaliable for sale.</li>
-<li>The app prompts the user to select the ID of the product</li>
-<li>The next prompt asks how many units of the product they would like to buy.</li>
-<li>Once Customer places order the application checks if your store has enough of the product to meet the customers request.</li>
-<li>If the store does have enough fo the product, you fulfill the customer's order.</li>
+<li>1. Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.</li>
+
+<li>2. Your `server.js` file should require the basic npm packages we've used in class: `express` and `path`.</li>
+
+<li>3. Your `htmlRoutes.js` file should include two routes:
+
+   * A GET Route to `/survey` which should display the survey page.
+   * A default, catch-all route that leads to `home.html` which displays the home page.</li>
+
+<li>4. Your `apiRoutes.js` file should contain two routes:
+
+   * A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
+   * A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.</li>
+
+<li>5. You should save your application's data inside of `app/data/friends.js` as an array of objects.</li>
+
+
+<li>6. Determine the user's most compatible friend using the following as a guide:
+
+   * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
+   * With that done, compare the difference between current user's scores against those from other users, question by question.
+    Add up the differences to calculate the `totalDifference`.
+   * Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on.
+   * The closest match will be the user with the least amount of difference.</li>
+
+<li>7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+   * The modal should display both the name and picture of the closest match.</li>
+
 
 ## <a name="structure-of-the-project"></a> Structure of the project
 <li>README.md</li>
@@ -48,40 +61,24 @@ This project is an compatiblity-based "FriendFinder" application. Basically a da
     <li>server.js</li>
 
 ## <a name="screenshots"></a> Screenshots
-Images of bamazon-app
-![Bamazon-app Initiated](images/bamazon-app_1.png)
-![Calling Bamazon-app ](images/bamazon-app_2.png)
-![Welcome to bamazon](images/bamazon-app_3.png)
-![Select a product](images/bamazon-app_4.png)
-![Selected quantity insuffient](images/bamazon-app_5.png)
-![Selected quantity successful](images/bamazon-app_6.png)
+Images of Friend Finder-app
+![Friend Finder-app Initiated](Screen_Shot_1.png)
+![Survery Page ](Screen_Shot_2.png)
+![Submit Suvery](Screen_Shot_3.png)
+
 
 
 ## <a name="technologies-used"></a> Technologies used to create the app
-<li>MySQL</li>
+<li>Heroku</li>
 <li>Node.js</li>
 <li>Command-line</li>
 <li>Javascript</li>
 <li>package-json</li>
 <li>node_modules</li>
 
-## <a name="mysql-database"></a> MySQL Database
-<li>DROP DATABASE IF EXISTS bamazonDB;</li>
-<li>CREATE DATABASE bamazonDB;</li>
-
-<li>USE bamazonDB;</li>
-
-<li>CREATE TABLE products</li>
-    <ol>item_id INTEGER AUTO_INCREMENT  NOT NULL,</ol>
-    <ol>product_name VARCHAR (50) NOT NULL,</ol>
-    <ol>department_name VARCHAR(50) NOT NULL,</ol>
-    <ol>price DECIMAL (10,4) NOT NULL,</ol>
-    <ol>stock_quantity INTEGER (10) NOT NULL,</ol>
-    <ol>primary key (item_id)</ol>
-
 
 ## <a name="how-to-use"></a> How to use app
-<li>Navigate to the BAMAZON-APP folder.</li>
+<li>Navigate to the href="https://hidden-hamlet-93045.herokuapp.com".</li>
 <li>In the command-line input 'node bamazonCustomer.js' press enter.</li>
 <li>Once the Welcome to Bamazon, displays the products and inventory.</li>
 <li>The "What is the ID number of the product that you would like to buy (enter a number from 1 to 10).</li>
