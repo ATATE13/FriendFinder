@@ -1,7 +1,7 @@
 {
   "name": "friendfinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node and Express Servers application.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/ATATE13/FriendFinder#readme",
   "dependencies": {
-    "node": "^11.10.0"
-  }
+    "express": "^4.16.4",
+    "node": "^11.10.0",
+    "requirer": "0.0.4"
+  },
+  "devDependencies": {}
 }
