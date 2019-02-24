@@ -1,7 +1,7 @@
-// ===============================================================================
+
 // DATA
-// Below data will hold all of the possible friends.
-// ===============================================================================
+// Below data holds all possible friends.
+
 
 
 var friends = [
@@ -100,8 +100,39 @@ var friends = [
            "4",
            "5"
         ]
-     }
- 
+     },
+     {
+         "name":"Mary Corr",
+         "photo":"https://www.facebook.com/photo.php?fbid=10213535718017953&set=t.1552086514&type=3&size=720%2C960",
+         "scores":[
+            "2",
+            "3",
+            "5",
+            "1",
+            "3",
+            "3",
+            "4",
+            "2",
+            "3",
+            "1"
+      ]
+   },
+   {
+         "name":"Patrece Cousins",
+         "photo":"https://media.licdn.com/dms/image/C4E03AQF4qqe6aceYMA/profile-displayphoto-shrink_800_800/0?e=1556755200&v=beta&t=VbUAjeLVa7bsy-19VhN2L5OOqUQZZErXgX6ScOhT9G4",
+         "scores":[
+            "3",
+            "3",
+            "1",
+            "5",
+            "5",
+            "5",
+            "3",
+            "3",
+            "4",
+            "4"
+      ]
+   }
  ]
  
  // Here we export the array. This makes it accessible to other files using require. 
