@@ -7,6 +7,7 @@ Node and Express Servers application.
 * [Project requirements](#project-requirements)
 * [Structure of the project](#structure-of-the-project)
 * [Screenshots](#screenshots)
+* [Video walk Through](#video)
 * [Technologies used to create app](#technologies-used)
 * [How to use app](#how-to-use)
 
@@ -66,7 +67,8 @@ Images of Friend Finder-app
 ![Survery Page ](Screen_Shot_2.png)
 ![Submit Suvery](Screen_Shot_3.png)
 
-
+## <a name="Video"></a> Video
+![FriendFinder GIF](FriendFinder.gif)
 
 ## <a name="technologies-used"></a> Technologies used to create the app
 <li>Heroku</li>
@@ -79,10 +81,10 @@ Images of Friend Finder-app
 
 ## <a name="how-to-use"></a> How to use app
 <li>Navigate to the href="https://hidden-hamlet-93045.herokuapp.com".</li>
-<li>In the command-line input 'node bamazonCustomer.js' press enter.</li>
-<li>Once the Welcome to Bamazon, displays the products and inventory.</li>
-<li>The "What is the ID number of the product that you would like to buy (enter a number from 1 to 10).</li>
-<li>The customer then selects the "ID" number desired.</li>
-<li>If the quanity is suffienct, the customer will be notified that "You're allowed to buy that many!", The total cost of the purchase.</li>
-<li>The inventory is then updated.</li>
+<li>Select "Go to Suvery" to start Friend Finder.</li>
+<li>Input your name.</li>
+<li>Input a URL to your picture</li>
+<li>Review the questions and select option 1 to 5, 1 being strongly disagree and 5 being strongly agree</li>
+<li>Once you complete the Suvery, select the "Submit" buttom to find your Friend Match.</li>
+<li>A picture of your compatible friend will appear.</li>
 
